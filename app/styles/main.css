@@ -1,0 +1,159 @@
+/* app css stylesheet */
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Raleway|Roboto';
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  background: #111;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.navbar-dark {
+  background-color: #111;
+  color: #FFF;
+}
+.navbar a {
+  color: #FFF;
+}
+.navbar a:hover {
+  color: #FFF;
+}
+
+.navbar a:visited {
+  color: #FFF;
+}
+
+.title {
+  color: #FFF;
+  font-weight: bold;
+}
+
+input.searchi {
+  background-color: #46634f !important;
+  border: 2px solid #d8d8d8;
+  color: #fff;
+  width: 100% !important;
+}
+
+.navbar-form .input-group>.form-control::placeholder{
+  color:#d8d8d8;
+}
+
+input.searchimain {
+  height: 50px;
+  background-color: #46634f !important;
+  border: 2px solid #d8d8d8;
+  color: #fff;
+  width: 100%;
+}
+.navbar-brand{
+  margin:0 !important;
+  padding:0 !important;
+}
+.etc-logo{
+  height:100%;
+  padding:5px;
+}
+@media (min-width: 768px) {
+    .searchimain {
+        width: 800px !important;
+    }
+}
+
+.boxi {
+  background-color: #104050;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: lighter;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.thead-inverse {
+  background-color: #669073;
+  color: #FFF;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #46634f !important;
+}
+
+.btn-etc {
+  background-color: #669073 !important;
+  border-color: #d8d8d8 !important;
+  color: #FFF !important;
+}
+
+.btn-etc.focus,.btn-etc:focus {
+  background-color: #46634f;
+  border-color: #f8f8f8;
+  color: #FFF;
+}
+
+.btn-etc:hover {
+  background-color: #46634f;
+  border-color: #f8f8f8;
+  color: #FFF;
+}
+
+.btn-etcm {
+  background-color: #669073 !important;
+  border-color: #d8d8d8 !important;
+  color: #FFF !important;
+  height: 50px !important;
+}
+
+.btn-etcm.focus,.btn-etcm:focus {
+  background-color: #669073;
+  border-color: #f8f8f8;
+  color: #FFF;
+}
+
+.btn-etcm:hover {
+  background-color: #669073;
+  border-color: #f8f8f8;
+  color: #FFF;
+}
+
+.styledfoot {
+  margin-top: 45px;
+  bottom: 0px;
+  padding-bottom: 25px;
+  text-align: center;
+  color: #FFF;
+  background-color: #669073;
+  width:100%;
+}
+
+// make the rpc command dialogue wider
+#connectwarning {width:900px;}
+#connectwarning-dialog   {width:900px;}
